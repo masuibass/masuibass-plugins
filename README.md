@@ -62,7 +62,7 @@
 - 実装直後の一次レビュー → `code-reviewer` (Sonnet)。implementer に実装させたら原則セットで回す
 - 重要な変更(リリース前・セキュリティ・複雑なロジック)の精密レビュー → `deep-reviewer` (Fable 5)。コストが高いので要所に絞る
 - 方針が固まったドキュメント執筆 → `doc-writer` (Sonnet)
-- 判断の余地がない機械的な単純作業 → `simple-tasks` (Haiku)
+- 判断の余地がない機械的な単純作業、パッケージインストール・環境セットアップの定型実行 → `simple-tasks` (Haiku)
 
 運用ルール:
 
