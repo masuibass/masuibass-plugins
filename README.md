@@ -1,6 +1,6 @@
-# claude-plugins
+# masuibass-plugins
 
-個人用 Claude Code プラグインのマーケットプレイス(マーケットプレイス名: `masuibass-plugins`。`claude-` で始まる名前は公式予約のため使用不可)。
+個人用 Claude Code プラグインのマーケットプレイス(`claude-` で始まる名前は公式予約のためマーケットプレイス名に使用不可)。
 
 ## 含まれるプラグイン
 
@@ -24,7 +24,7 @@
 1. Claude Code でマーケットプレイスを追加してプラグインをインストール:
 
    ```
-   /plugin marketplace add masuibass/claude-plugins
+   /plugin marketplace add masuibass/masuibass-plugins
    /plugin install delegation-agents@masuibass-plugins
    ```
 
