@@ -1,6 +1,6 @@
 # claude-plugins
 
-個人用 Claude Code プラグインのマーケットプレイス。
+個人用 Claude Code プラグインのマーケットプレイス(マーケットプレイス名: `masuibass-plugins`。`claude-` で始まる名前は公式予約のため使用不可)。
 
 ## 含まれるプラグイン
 
@@ -25,7 +25,7 @@
 
    ```
    /plugin marketplace add masuibass/claude-plugins
-   /plugin install delegation-agents@claude-plugins
+   /plugin install delegation-agents@masuibass-plugins
    ```
 
 2. `~/.claude/CLAUDE.md` に下記の「委譲ポリシー」をコピーする(プラグインでは配布できないため手動。既にある場合は不要)
@@ -39,7 +39,7 @@
 エージェント定義を変更したら、このリポジトリに push した上で各マシンで:
 
 ```
-/plugin marketplace update claude-plugins
+/plugin marketplace update masuibass-plugins
 ```
 
 ## ~/.claude/CLAUDE.md に記載する委譲ポリシー
