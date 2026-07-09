@@ -19,6 +19,16 @@
 | `doc-writer` | Sonnet | 方針確定済みのドキュメント執筆 |
 | `simple-tasks` | Haiku | 判断の余地がない機械的作業 |
 
+### youtube-tools
+
+YouTube 関連のスキル集。
+
+| スキル | 内容 |
+|---|---|
+| `youtube-summary` | yt-dlp で字幕を取得し、サブエージェントで動画の要約・質問回答を行う |
+
+前提: `yt-dlp` がインストールされていること(`brew install yt-dlp`)。
+
 ## 新しいマシンでのセットアップ
 
 1. Claude Code でマーケットプレイスを追加してプラグインをインストール:
@@ -26,6 +36,7 @@
    ```
    /plugin marketplace add masuibass/masuibass-plugins
    /plugin install delegation-agents@masuibass-plugins
+   /plugin install youtube-tools@masuibass-plugins
    ```
 
 2. `~/.claude/CLAUDE.md` に下記の「委譲ポリシー」をコピーする(プラグインでは配布できないため手動。既にある場合は不要)

@@ -9,6 +9,11 @@
       "name": "delegation-agents",
       "source": "./plugins/delegation-agents",
       "description": "トークン効率のためのサブエージェント委譲構成。調査(code-explorer/web-researcher)・実装(implementer)・検証(verifier)・レビュー(code-reviewer/deep-reviewer)・ドキュメント(doc-writer)・単純作業(simple-tasks)の8エージェント"
+    },
+    {
+      "name": "youtube-tools",
+      "source": "./plugins/youtube-tools",
+      "description": "YouTube 関連のスキル集。youtube-summary: 字幕取得による動画の要約・質問回答(要 yt-dlp)"
     }
   ]
 }

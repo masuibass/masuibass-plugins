@@ -1,0 +1,9 @@
+{
+  "name": "youtube-tools",
+  "description": "YouTube 関連のスキル集。youtube-summary: yt-dlp で字幕を取得し、サブエージェントで要約・質問回答を行う(要 yt-dlp)",
+  "version": "1.0.0",
+  "author": {
+    "name": "masuibass",
+    "email": "masuibass@gmail.com"
+  }
+}
