@@ -1,7 +1,7 @@
 {
   "name": "delegation-agents",
   "description": "トークン効率のためのサブエージェント群。メインエージェントは判断・統合に集中し、調査・実装・検証・レビュー・ドキュメント・単純作業を適切なモデル(Sonnet/Haiku/Fable 5)のサブエージェントへ委譲する",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": {
     "name": "masuibass",
     "email": "masuibass@gmail.com"
