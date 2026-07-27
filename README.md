@@ -15,7 +15,7 @@
 | `implementer` | Sonnet | 仕様確定済みの実装・編集 |
 | `verifier` | Sonnet | テスト・ビルド・型チェックの実行とログ要約 |
 | `code-reviewer` | Sonnet | 実装直後の一次レビュー(独立文脈) |
-| `deep-reviewer` | Fable 5 | 重要な変更の精密な敵対的レビュー |
+| `deep-reviewer` | Opus 5 | 重要な変更の精密な敵対的レビュー |
 | `doc-writer` | Sonnet | 方針確定済みのドキュメント執筆 |
 | `simple-tasks` | Haiku | 判断の余地がない機械的作業 |
 
@@ -41,7 +41,7 @@ YouTube 関連のスキル集。
 
 2. `~/.claude/CLAUDE.md` に下記の「委譲ポリシー」をコピーする(プラグインでは配布できないため手動。既にある場合は不要)
 
-3. `/model` でメインモデルを設定する(推奨: Fable 5)
+3. `/model` でメインモデルを設定する(推奨: Opus 5)
 
 注意: `~/.claude/agents/` に同名のエージェント定義を置かないこと。ユーザーレベル定義がプラグイン定義より優先され、プラグインの更新が反映されなくなる。
 
