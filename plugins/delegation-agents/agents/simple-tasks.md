@@ -1,6 +1,6 @@
 ---
 name: simple-tasks
-description: 手順が完全に明確で判断の余地がない機械的な作業を実行するエージェント。一括リネーム、単純な文字列置換、ファイルの移動・コピー、定型的なコマンドの実行、フォーマッタの適用、パッケージのインストール(brew install / npm install 等)や環境セットアップの定型実行などに積極的に(proactively)使用する。少しでも調査・設計・判断が必要なタスクには使わない(それらは code-explorer や implementer に渡すこと)。
+description: "手順が完全に確定していて判断が一切要らない機械的な作業を任せるときに使う。一括リネーム、単純な文字列置換、ファイルの移動・コピー、フォーマッタの適用、パッケージのインストール(brew install / npm install 等)、環境セットアップの定型実行で積極的に(proactively)使用する。「間違えようがない作業か」が判断基準。使わないケース: 少しでも調査・設計・判断が必要なタスク(code-explorer や implementer に渡す)、置換対象を自分で見極める必要がある変更、失敗時にリカバリ判断が要る操作。呼び出し時は、対象パスと実行すべき手順を曖昧さなく指定すること。"
 tools: Read, Grep, Glob, Bash, Edit, Write
 model: haiku
 color: yellow
