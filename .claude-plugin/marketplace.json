@@ -14,6 +14,11 @@
       "name": "youtube-tools",
       "source": "./plugins/youtube-tools",
       "description": "YouTube 関連のスキル集。youtube-summary: 字幕取得による動画の要約・質問回答(要 yt-dlp)"
+    },
+    {
+      "name": "zed-worktree",
+      "source": "./plugins/zed-worktree",
+      "description": "Claude Code の worktree を Zed の worktree ディレクトリ(../worktrees/<repo>/<name>)に作る WorktreeCreate フック。ブランチ名は worktree 名そのまま"
     }
   ]
 }

@@ -37,6 +37,20 @@ YouTube 関連のスキル集。
 
 前提: `yt-dlp` がインストールされていること(`brew install yt-dlp`)。
 
+### zed-worktree
+
+Claude Code が作る worktree(`--worktree`、サブエージェントの `isolation: worktree`、background session)を、Zed の `git.worktree_directory` の既定と同じ `../worktrees/<repo>/<name>` に配置する `WorktreeCreate` フック。Zed の worktree picker に並ぶので、別ウィンドウで開いて Git panel でレビューできる。
+
+- ブランチ名は worktree 名そのまま(`claude --worktree feature-auth` → `feature-auth`)。同名ブランチが既にあればそれをチェックアウトする
+- 現在の HEAD から分岐する(`worktree.baseRef` の設定は不要)
+- フック使用時は Claude Code が `.worktreeinclude` を処理しないため、フック内で main checkout の `.worktreeinclude` に列挙されたファイル(`.env` 等)をコピーする
+- フックで作った worktree には Claude Code のマーカーが付かず、自動掃除の対象外。不要になったら Zed の worktree picker から削除する
+- 効くのはセッション中の worktree 作成(EnterWorktree、サブエージェントの `isolation: worktree`、background session)。起動時の `claude --worktree <name>` はプラグイン読み込み前に worktree を作るためフックが効かず、既定の `.claude/worktrees/` に作られる(v2.1.280 で確認)。起動時にも効かせたい場合は同じ hooks 設定を `settings.json` に書く
+
+Zed 側で worktree を作ったときにも同じコピーを行うには、`zed-tasks.example.json` の内容を `~/.config/zed/tasks.json` に置く(`create_worktree` Task フック)。
+
+前提: `jq` がインストールされていること。
+
 ## 新しいマシンでのセットアップ
 
 1. Claude Code でマーケットプレイスを追加してプラグインをインストール:
@@ -45,6 +59,7 @@ YouTube 関連のスキル集。
    /plugin marketplace add masuibass/masuibass-plugins
    /plugin install delegation-agents@masuibass-plugins
    /plugin install youtube-tools@masuibass-plugins
+   /plugin install zed-worktree@masuibass-plugins
    ```
 
 2. `~/.claude/CLAUDE.md` に下記の「委譲ポリシー」をコピーする(プラグインでは配布できないため手動。既にある場合は不要)

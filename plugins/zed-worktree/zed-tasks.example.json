@@ -1,0 +1,13 @@
+[
+  {
+    "label": "worktree setup: copy .worktreeinclude files",
+    "command": "sh",
+    "args": [
+      "-c",
+      "cd \"$ZED_MAIN_GIT_WORKTREE\" || exit 0; [ -f .worktreeinclude ] || exit 0; grep -v '^#' .worktreeinclude | grep -v '^$' | while read -r pat; do for f in $pat; do [ -f \"$f\" ] && mkdir -p \"$ZED_WORKTREE_ROOT/$(dirname \"$f\")\" && cp \"$f\" \"$ZED_WORKTREE_ROOT/$f\"; done; done; exit 0"
+    ],
+    "hooks": ["create_worktree"],
+    "reveal": "no_focus",
+    "hide": "on_success"
+  }
+]
