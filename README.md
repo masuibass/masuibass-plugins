@@ -39,7 +39,7 @@ YouTube 関連のスキル集。
 
 ### zed-worktree
 
-Claude Code が作る worktree(`--worktree`、サブエージェントの `isolation: worktree`、background session)を、Zed の `git.worktree_directory` の既定と同じ `../worktrees/<repo>/<name>` に配置する `WorktreeCreate` フック。Zed の worktree picker に並ぶので、別ウィンドウで開いて Git panel でレビューできる。
+Claude Code が作る worktree(`--worktree`、サブエージェントの `isolation: worktree`、background session)を、Zed の `git.worktree_directory` の既定と同じ `../worktrees/<repo>/<name>/<repo>` に配置する `WorktreeCreate` フック。Zed の worktree picker に並ぶので、別ウィンドウで開いて Git panel でレビューできる。
 
 - ブランチ名は worktree 名そのまま(`claude --worktree feature-auth` → `feature-auth`)。同名ブランチが既にあればそれをチェックアウトする
 - 現在の HEAD から分岐する(`worktree.baseRef` の設定は不要)

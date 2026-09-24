@@ -14,7 +14,7 @@ root=$(git -C "$cwd" rev-parse --show-toplevel)
 common=$(git -C "$root" rev-parse --path-format=absolute --git-common-dir)
 main_root=$(dirname "$common")
 repo=$(basename "$main_root")
-dir="$(dirname "$main_root")/worktrees/$repo/$name"
+dir="$(dirname "$main_root")/worktrees/$repo/$name/$repo"
 # ブランチ名は worktree 名そのまま(push / PR にそのまま使える)
 branch="$name"
 

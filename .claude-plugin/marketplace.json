@@ -18,7 +18,7 @@
     {
       "name": "zed-worktree",
       "source": "./plugins/zed-worktree",
-      "description": "Claude Code の worktree を Zed の worktree ディレクトリ(../worktrees/<repo>/<name>)に作る WorktreeCreate フック。ブランチ名は worktree 名そのまま"
+      "description": "Claude Code の worktree を Zed の worktree ディレクトリ(../worktrees/<repo>/<name>/<repo>)に作る WorktreeCreate フック。ブランチ名は worktree 名そのまま"
     }
   ]
 }

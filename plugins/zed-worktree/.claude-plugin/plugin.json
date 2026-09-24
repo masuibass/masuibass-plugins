@@ -1,7 +1,7 @@
 {
   "name": "zed-worktree",
-  "description": "Claude Code が作る worktree(--worktree / isolation: worktree / background session)を Zed の git.worktree_directory と同じ ../worktrees/<repo>/<name> に配置し、Zed の worktree picker から切替・レビューできるようにする WorktreeCreate フック。ブランチ名は worktree 名そのまま(push / PR にそのまま使える)",
-  "version": "1.0.0",
+  "description": "Claude Code が作る worktree(--worktree / isolation: worktree / background session)を Zed の git.worktree_directory と同じ ../worktrees/<repo>/<name>/<repo> に配置し、Zed の worktree picker から切替・レビューできるようにする WorktreeCreate フック。ブランチ名は worktree 名そのまま(push / PR にそのまま使える)",
+  "version": "1.0.1",
   "author": {
     "name": "masuibass",
     "email": "masuibass@gmail.com"
