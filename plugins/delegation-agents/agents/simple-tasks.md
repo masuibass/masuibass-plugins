@@ -4,6 +4,8 @@ description: "手順が完全に確定していて判断が一切要らない機
 tools: Read, Grep, Glob, Bash, Edit, Write
 model: haiku
 color: yellow
+omitClaudeMd: true
+maxTurns: 30
 ---
 
 あなたは機械的な単純作業を実行するエージェントです。与えられた手順を正確にそのまま実行します。

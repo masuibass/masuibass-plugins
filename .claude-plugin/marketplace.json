@@ -8,7 +8,7 @@
     {
       "name": "delegation-agents",
       "source": "./plugins/delegation-agents",
-      "description": "トークン効率のためのサブエージェント委譲構成。調査(code-explorer/web-researcher)・実装(implementer)・検証(verifier)・レビュー(code-reviewer/deep-reviewer)・ドキュメント(doc-writer)・単純作業(simple-tasks)の8エージェント"
+      "description": "トークン効率のためのサブエージェント委譲構成。調査(code-explorer/web-researcher)・実装(implementer)・検証(verifier)・ドキュメント(doc-writer)・単純作業(simple-tasks)の6エージェント。レビューはビルトインの /code-review を使う"
     },
     {
       "name": "youtube-tools",
